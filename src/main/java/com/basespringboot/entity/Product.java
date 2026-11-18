@@ -13,17 +13,17 @@ import lombok.Setter;
 
 @Entity
 @Getter @Setter 
-public class Produit {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nom;
-    private BigDecimal prix;
-    private Integer quantite;
+    private String name;
+    private BigDecimal price;
+    private Integer quantity;
 
     
     @ManyToOne 
-    @JoinColumn(name = "categorie_id")
-    private Categorie categorie;
+    @JoinColumn(name = "category_id")
+    private Category category;
 }

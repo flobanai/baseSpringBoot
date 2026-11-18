@@ -12,13 +12,13 @@ import java.util.List;
 
 @Entity
 @Getter @Setter
-public class Categorie {
+public class Category {
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nom;
+    private String name;
 
-    @OneToMany(mappedBy = "categorie")
-    private List<Produit> produits;
+    @OneToMany(mappedBy = "category")
+    private List<Product> products;
 }

@@ -6,10 +6,10 @@ import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public record ProduitRequest(
-    @NotBlank String nom,
-    @NotNull @Positive BigDecimal prix,
-    @NotNull @PositiveOrZero Integer quantite,
-    Long categorieId
+public record ProductRequest(
+    @NotBlank String name,
+    @NotNull @Positive BigDecimal price,
+    @NotNull @PositiveOrZero Integer quantity,
+    Long categoryId
 ) {
 }
