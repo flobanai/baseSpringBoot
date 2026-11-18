@@ -1,11 +1,14 @@
 info:
-  name: Untitled
+  name: Create category
   type: http
   seq: 1
 
 http:
-  method: GET
-  url: ""
+  method: POST
+  url: "{{baseUrl}}/api/categories"
+  body:
+    type: json
+    data: '{ "name": "Boissons" }'
   auth: inherit
 
 settings:
