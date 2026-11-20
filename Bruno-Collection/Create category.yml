@@ -8,7 +8,8 @@ http:
   url: "{{baseUrl}}/api/categories"
   body:
     type: json
-    data: '{ "name": "Boissons" }'
+    data: |
+      { "name": "Boissons" }
   auth: inherit
 
 settings:
